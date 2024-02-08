@@ -1,0 +1,13 @@
+version: '3.1'
+
+name: flyway-getting-started
+
+services:
+
+  postgres-db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: password
+    ports:
+    - 54321:5432
